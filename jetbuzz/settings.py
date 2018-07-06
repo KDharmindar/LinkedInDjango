@@ -85,19 +85,33 @@ WSGI_APPLICATION = 'jetbuzz.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.mysql',
+#       'NAME': 'sq_jetbuzz_db',
+#       'USER': 'root',
+#       'PASSWORD': '',
+#       'HOST': 'localhost',  # Or an IP Address that your DB is hosted on
+#       'PORT': '3306',
+#       'OPTIONS': {
+#           'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+#       },
+#   }
+#}
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'sq_jetbuzz_db',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',  # Or an IP Address that your DB is hosted on
-        'PORT': '3306',
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-        },
+        'USER': 'postgres',
+        'PASSWORD': '12345',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators

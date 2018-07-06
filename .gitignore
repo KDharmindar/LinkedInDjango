@@ -12,3 +12,4 @@ local_settings.py
 venv/
 .idea/*
 .DS_Store
+/.metadata/
